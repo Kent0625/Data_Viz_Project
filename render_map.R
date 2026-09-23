@@ -27,8 +27,9 @@ merged_data <- us_boundaries %>%
 cat("Total contiguous counties:", nrow(merged_data), "\n")
 
 cat("=== 2. Creating 2D Diabetes Map ===\n")
-# Official Diabetes Awareness Color Scale (IDF World Diabetes Blue #0072CE)
-diabetes_colors <- c("#F0F8FF", "#B8DBF5", "#5DADE2", "#0072CE", "#004B87", "#052244")
+# Clinical Blood-Glucose & Health Alert Color Scale:
+# Sequential gradient: soft pale rose (low prevalence) -> vibrant blood red -> deep crimson maroon (peak epidemic clusters)
+diabetes_colors <- c("#FFF5F0", "#FEE0D2", "#FC9272", "#EF3B2C", "#CB181D", "#99000D", "#5A0009")
 
 diabetes_map <- ggplot(merged_data) +
   geom_sf(aes(fill = as.numeric(Percentage)), color = NA) +
@@ -46,7 +47,7 @@ diabetes_map <- ggplot(merged_data) +
     caption = "Source: CDC Diabetes Atlas 2021 | Visualization by Kent John Macalam"
   ) +
   theme(
-    plot.title = element_text(face = "bold", size = 18, color = "#002B66", hjust = 0.5),
+    plot.title = element_text(face = "bold", size = 18, color = "#67000D", hjust = 0.5),
     plot.subtitle = element_text(size = 13, color = "#444444", hjust = 0.5, margin = margin(b = 15)),
     plot.caption = element_text(size = 10, color = "#666666", hjust = 0.95),
     legend.position = "right",

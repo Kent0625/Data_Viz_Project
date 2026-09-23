@@ -43,7 +43,7 @@ This project visualizes the geographic distribution of adult diabetes prevalence
 - **Language:** R
 - **3D rendering:** `rayshader`
 - **Spatial data:** `sf`, `stars`, `raster`
-- **Visualization:** `ggplot2`, Diabetes Awareness Blue Sequential Palette (IDF #0072CE standard)
+- **Visualization:** `ggplot2`, Clinical Blood-Glucose & Health Alert Red Sequential Palette (`#FFF5F0` to `#5A0009`)
 - **Data wrangling:** `dplyr`, `stringr`, `readr`
 
 ---

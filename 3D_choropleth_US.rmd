@@ -67,10 +67,10 @@ merged_data <- us_boundaries %>%
 # PLOT 2D MAP
 
 ```{r, fig.width=16, fig.height=8}
-# Diabetes Awareness Color Palette:
-# Blue is the universal color of Diabetes Awareness (IDF / World Diabetes Day Blue #0072CE, UN Resolution 61/225)
-# Sequential gradient: light ice blue (low prevalence) -> vivid diabetes blue -> deep midnight navy (high prevalence clusters)
-diabetes_colors <- c("#F0F8FF", "#B8DBF5", "#5DADE2", "#0072CE", "#004B87", "#052244")
+# Diabetes Epidemiological Risk Palette:
+# Clinical blood-glucose & public health alert scale:
+# Sequential gradient: pale warm rose (low prevalence) -> vivid blood red -> deep crimson maroon (peak epidemic clusters)
+diabetes_colors <- c("#FFF5F0", "#FEE0D2", "#FC9272", "#EF3B2C", "#CB181D", "#99000D", "#5A0009")
 
 diabetes_map <- ggplot(merged_data) +
   geom_sf(aes(fill = as.numeric(Percentage)), color = NA) +
@@ -79,7 +79,7 @@ diabetes_map <- ggplot(merged_data) +
                        na.value = "grey80") +
   theme_minimal() +
   labs(title = "Diabetes Distribution in the U.S.: A County-Level Analysis",
-       caption = "Source: CDC Diabetes Atlas | Visualization created with R") +
+       caption = "Source: CDC Diabetes Atlas | Visualization by Kent John Macalam") +
   theme(legend.position = "right",
         panel.background = element_rect(fill = "white", color = NA),
         plot.background = element_rect(fill = "white", color = NA))
