@@ -1,13 +1,41 @@
 # U.S. Diabetes 3D Choropleth Map
 
-> A 3D rayshader visualization of adult diabetes prevalence across all contiguous U.S. counties using CDC data.
+> An interactive 3D visualization and rayshader mapping of adult diabetes prevalence across all contiguous U.S. counties using CDC data.
 
 **Authors:** Kent John Macalam &nbsp;|&nbsp; **Date:** 2025  
-**Data:** CDC Diabetes Atlas 2021
+**Data:** CDC Diabetes Atlas 2021 & US Census Bureau
+
+[![Live Interactive 3D Map](https://img.shields.io/badge/Live%20Demo-Interactive%203D%20Map-ef3b2c?style=for-the-badge&logo=google-earth&logoColor=white)](https://kent0625.github.io/Data_Viz_Project/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-181717?style=for-the-badge&logo=github)](https://kent0625.github.io/Data_Viz_Project/)
+
+👉 **[Launch Live Interactive 3D Map in Your Browser](https://kent0625.github.io/Data_Viz_Project/)**
 
 ![3D Diabetes Map](USA_diabetes_3d_map.png)
 
 ![2D County Map](diabetes_2d_map.png)
+
+---
+
+## 🎮 Interactive Web App Features
+
+Visitors can customize the visualization in real-time right in their web browser:
+
+- **Point of View (POV) & Camera**:
+  - Orbit controls (click & drag to rotate in 360°, scroll to zoom, right-click to pan).
+  - Fine-grained Elevation Pitch ($\phi$) and Rotation Azimuth ($\theta$) sliders.
+  - Camera Presets: *Rayshader 3D*, *Top-Down 2D*, *Cinematic Horizon*, and *South Clusters*.
+  - Turntable auto-rotation mode.
+- **Sun Lighting & Shadow Controls**:
+  - Live sun direction azimuth slider (0°–360°) and sun elevation slider (15°–85°).
+  - Real-time soft shadow intensity slider.
+  - Lighting Presets: *Studio Crisp*, *Golden Sun*, *High Noon*, and *Dramatic*.
+- **3D Extrusion & Themes**:
+  - Real-time 3D height extrusion scale slider (0.2x–3.0x).
+  - 4 Curated Palettes: *Clinical Blood Red (Alert)*, *Diabetes Blue (IDF)*, *CDC Heat Alert*, and *Viridis Clinical*.
+  - Studio floor toggle (Clean Studio White vs. Dark Mode).
+- **Inspection & Export**:
+  - Hover over any of the 3,108 contiguous counties to see exact prevalence %, state, and risk classification.
+  - 📸 **High-Res PNG Snapshot Exporter**: Download customized camera and lighting renders instantly.
 
 ---
 
